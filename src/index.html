@@ -1,11 +1,229 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trabalho N2</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Landing — Trabalho N2</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./style/style.css" />
 </head>
 <body>
-    
-</body>
-</html>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="#">Lumina<span> Tech</span></a>
+            <nav class="main-nav">
+                <a href="#">Início</a>
+                <a href="#">Páginas</a>
+                <a href="#">Blog</a>
+                <a href="#">Contato</a>
+            </nav>
+            <a class="cta" href="#contato">Calcule sua economia grátis</a>
+        </div>
+    </header>
+
+    <div class="urgency-strip">
+        <div class="container">A conta de luz sobe todo ano — cada mês sem energia solar é dinheiro jogado fora.</div>
+    </div>
+
+    <main class="hero">
+        <div class="container hero-grid">
+            <section class="hero-left">
+                <h1>Aprenda. Conecte. Cresça.</h1>
+                <p class="lead">Cursos práticos, projetos reais e mentoria para transformar conhecimento em carreira.</p>
+
+
+                    <section class="hero-left">
+                        <h1>Economize até 95% na sua conta de luz</h1>
+                        <p class="lead">Sua conta de R$600 pode virar R$40. Veja quanto você economiza agora — sem compromisso.</p>
+
+                        <div class="savings-box">
+                            <div class="savings-input">
+                                <label>Quanto você paga hoje?</label>
+                                <div class="input-row"><input id="billInput" type="number" placeholder="R$ 600" /> <button id="calcBtn">Calcular</button></div>
+                                <div class="savings-result" id="savingsResult">Exemplo: conta de R$600 → <strong>R$40/mês</strong></div>
+                            </div>
+                            <div class="savings-cta">
+                                <a class="btn-primary large" href="#contato">Quero meu cálculo grátis</a>
+                                <p class="privacy-note">Só precisamos de nome e telefone. Seus dados ficam seguros.</p>
+                            </div>
+                        </div>
+
+                        <div class="stats">
+                            <div class="stat">
+                                <div class="stat-value">500+</div>
+                                <div class="stat-label">Projetos instalados</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-value">R$ 2 mi</div>
+                                <div class="stat-label">Economizados pelos clientes</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-value">98%</div>
+                                <div class="stat-label">Satisfação</div>
+                            </div>
+                        </div>
+                    </section>
+            </section>
+
+            <aside class="hero-right">
+                <div class="card">
+                    <div class="card-media">
+                        <div class="chip">Curso</div>
+                    </div>
+                    <div class="card-body">
+                        <h3>Fundamentos Web-UX</h3>
+                        <p class="muted">Projeto feito para Trabalho N2</p>
+                        <div class="card-meta">
+                            <div class="meta-left">
+                                <div class="rating">4.9 • 2.3k avaliações</div>
+                            </div>
+                            <button class="btn-primary">Inscrever-se</button>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+        <section class="features container" id="beneficios">
+            <h2 class="section-title">Por que escolher nossa plataforma</h2>
+            <div class="features-grid">
+                <article class="feature">
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&s=8f9c0b3a8b7f6ab3b2f0c3c6b1f6f7e7" alt="Aulas" />
+                    <h3>Aulas práticas</h3>
+                    <p>Conteúdo aplicado e exercícios reais para fixar conhecimento.</p>
+                </article>
+                <article class="feature">
+                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&s=2b1a0d0ad5f5b4e9b7c6a1b9c3d2e4f5" alt="Mentoria" />
+                    <h3>Mentoria dedicada</h3>
+                    <p>Mentores experientes orientam em projetos e carreira.</p>
+                </article>
+                <article class="feature">
+                    <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&s=5f2d3c8a6b4f1e9d2c3b4a5f6d7e8c9b" alt="Comunidade" />
+                    <h3>Comunidade ativa</h3>
+                    <p>Rede de estudantes e profissionais para trocar experiências.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="about container" id="sobre">
+            <div class="about-grid">
+                <div class="about-media">
+                    <img src="https://images.unsplash.com/photo-1496307042754-b4aa456c4a2d?q=80&w=900&auto=format&fit=crop&ixlib=rb-4.0.3&s=0a1b2c3d4e5f67890123456789abcdef" alt="Sobre nós" />
+                    <section class="faq container" id="duvidas">
+                        <h2 class="section-title">Dúvidas frequentes</h2>
+                        <div class="faq-grid">
+                            <div class="faq-item">
+                                <h3>Quanto tempo até pagar o investimento?</h3>
+                                <p>Em geral entre 3 e 6 anos, dependendo do seu consumo. Muitos clientes recuperam o investimento com a economia mensal.</p>
+                            </div>
+                            <div class="faq-item">
+                                <h3>E se o dia estiver nublado?</h3>
+                                <p>Sistemas atuais geram energia mesmo em dias nublados e são dimensionados para a média anual de produção — você continua economizando.</p>
+                            </div>
+                            <div class="faq-item">
+                                <h3>Quem garante que vai funcionar?</h3>
+                                <p>Fornecemos garantia dos equipamentos e suporte técnico local. Também entregamos monitoramento em tempo real pelo app.</p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="about-body">
+                    <h2>Somos educadores práticos</h2>
+                        <div class="testimonials-grid">
+                            <blockquote class="testimonial">
+                                <p>"Minha conta caiu de R$4.200 para R$380 em 8 meses — recuperamos o investimento em 4 anos."</p>
+                                <footer>
+                                    <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=200&auto=format&fit=crop&ixlib=rb-4.0.3&s=abcd1234abcd1234abcd1234abcd1234" alt="Cliente Ana"/>
+                                    <cite>Ana — Padaria, Florianópolis/SC</cite>
+                                </footer>
+                            </blockquote>
+                            <blockquote class="testimonial">
+                                <p>"Conta de R$1.200 caiu para R$95 em 6 meses. Atendimento e instalação impecáveis."</p>
+                                <footer>
+                                    <img src="https://images.unsplash.com/photo-1545996124-1b2f5d6a1a2b?q=80&w=200&auto=format&fit=crop&ixlib=rb-4.0.3&s=efgh5678efgh5678efgh5678efgh5678" alt="Cliente Rafael"/>
+                                    <cite>Rafael — Oficina Mecânica, Joinville/SC</cite>
+                                </footer>
+                            </blockquote>
+                        </div>
+                </div>
+                <div class="result-card">
+                    <div class="big">4.8</div>
+                    <p>média de avaliação dos cursos</p>
+                </div>
+                <div class="result-card">
+                    <div class="big">120+</div>
+                    <p>empresas parceiras recrutando</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials container" id="depoimentos">
+            <h2 class="section-title">O que nossos alunos dizem</h2>
+            <div class="testimonials-grid">
+                <blockquote class="testimonial">
+                    <p>"O curso mudou minha carreira — consegui uma vaga como UX Designer em 3 meses."</p>
+                    <footer>
+                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=200&auto=format&fit=crop&ixlib=rb-4.0.3&s=abcd1234abcd1234abcd1234abcd1234" alt="Aluno"/>
+                        <cite>Mariana, UX Designer</cite>
+                    </footer>
+                </blockquote>
+                <blockquote class="testimonial">
+                    <p>"Mentoria prática e feedback direto — meu portfólio ficou excelente."</p>
+                    <footer>
+                        <img src="https://images.unsplash.com/photo-1545996124-1b2f5d6a1a2b?q=80&w=200&auto=format&fit=crop&ixlib=rb-4.0.3&s=efgh5678efgh5678efgh5678efgh5678" alt="Aluno"/>
+                        <cite>Rafael, Front-end</cite>
+                    </footer>
+                </blockquote>
+            </div>
+        </section>
+
+        <section class="partners container" id="parceiros">
+            <h2 class="section-title">Parceiros</h2>
+            <div class="partners-grid">
+                <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=300&auto=format&fit=crop&ixlib=rb-4.0.3&s=11111111111111111111111111111111" alt="Parceiro 1"/>
+                <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=300&auto=format&fit=crop&ixlib=rb-4.0.3&s=22222222222222222222222222222222" alt="Parceiro 2"/>
+                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=300&auto=format&fit=crop&ixlib=rb-4.0.3&s=33333333333333333333333333333333" alt="Parceiro 3"/>
+            </div>
+        </section>
+
+        <section class="contact container" id="contato">
+    <section class="contact container" id="contato">
+        <h2 class="section-title">Calcule sua economia grátis</h2>
+        <div class="contact-grid">
+            <form id="contactForm" class="contact-form" action="#" onsubmit="handleContact(event)">
+                <label>Nome
+                    <input type="text" name="name" required />
+                </label>
+                <label>Telefone
+                    <input type="tel" name="phone" required placeholder="(47) 99999-9999" />
+                </label>
+                <label>Tipo de imóvel
+                    <div class="radio-row"><label><input type="radio" name="type" value="residencial" checked /> Residencial</label><label><input type="radio" name="type" value="comercial" /> Comercial</label></div>
+                </label>
+                <button type="submit" class="btn-primary">Quero meu cálculo grátis</button>
+                <p class="privacy-note">Só pedimos nome e telefone — seus dados ficam seguros e não serão vendidos.</p>
+            </form>
+            <div class="contact-info">
+                <p>Ou envie um email para <a href="mailto:contato@lumina.com.br">contato@lumina.com.br</a></p>
+                <p>Atendimento: (47) 3300-1234 • Joinville/SC</p>
+            </div>
+        </div>
+    </section>
+
+        <footer class="site-footer">
+            <div class="container">© 2026 EDUO — Todos os direitos reservados.</div>
+        </footer>
+
+        <script>
+            function handleContact(e){
+                e.preventDefault();
+                const form = e.target;
+                const data = new FormData(form);
+                alert('Obrigado, ' + data.get('name') + '! Mensagem enviada.');
+                form.reset();
+            }
+        </script>
+
+    </body>
+    </html>
