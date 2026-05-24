@@ -1,229 +1,449 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Landing — Trabalho N2</title>
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700;800&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="./style/style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lumina Tech Solar — Sistemas de Energia Inteligentes & App</title>
+  <meta name="description" content="Painéis solares inteligentes e gestão de energia pelo app. Economize até 95% na conta de luz com tecnologia de ponta. Solicite seu orçamento grátis." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" /> -->
+  <link rel="stylesheet" href="style/style.css" />
 </head>
 <body>
-    <header class="site-header">
-        <div class="container header-inner">
-            <a class="brand" href="#">Lumina<span> Tech</span></a>
-            <nav class="main-nav">
-                <a href="#">Início</a>
-                <a href="#">Páginas</a>
-                <a href="#">Blog</a>
-                <a href="#">Contato</a>
-            </nav>
-            <a class="cta" href="#contato">Calcule sua economia grátis</a>
-        </div>
-    </header>
 
-    <div class="urgency-strip">
-        <div class="container">A conta de luz sobe todo ano — cada mês sem energia solar é dinheiro jogado fora.</div>
+  <!-- ── HEADER ── -->
+  <header>
+    <div class="header-inner">
+      <a href="#hero" class="logo" aria-label="Lumina Tech Solar - Página inicial">
+        <svg class="logo-icon" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <circle cx="18" cy="18" r="18" fill="#0E3460"/>
+          <circle cx="18" cy="13" r="5" fill="#F5A623"/>
+          <path d="M18 5v2M18 21v2M10 13H8M28 13h-2M11.5 7.5l1.5 1.5M23 18.5l1.5 1.5M11.5 18.5L13 17M23 7.5l-1.5 1.5" stroke="#F5A623" stroke-width="1.5" stroke-linecap="round"/>
+          <rect x="10" y="22" width="16" height="9" rx="2" fill="#1565C0"/>
+          <path d="M14 22v9M18 22v9M22 22v9" stroke="#0E3460" stroke-width="0.8"/>
+          <path d="M10 25h16" stroke="#0E3460" stroke-width="0.8"/>
+        </svg>
+        <div>
+          <div class="logo-text">LUMINA <span>TECH</span></div>
+          <div style="font-size:0.6rem; color: rgba(255,255,255,0.4); letter-spacing:0.1em; text-transform:uppercase; font-family: var(--font-body);">Solar Systems</div>
+        </div>
+      </a>
+
+      <nav aria-label="Navegação principal">
+        <a href="#beneficios">Benefícios</a>
+        <a href="#como-funciona">Como funciona</a>
+        <a href="#prova-social">Depoimentos</a>
+        <a href="#orcamento">Contato</a>
+      </nav>
+
+      <a href="#orcamento" class="btn-primary header-cta">Solicitar orçamento</a>
     </div>
+  </header>
 
-    <main class="hero">
-        <div class="container hero-grid">
-            <section class="hero-left">
-                <h1>Aprenda. Conecte. Cresça.</h1>
-                <p class="lead">Cursos práticos, projetos reais e mentoria para transformar conhecimento em carreira.</p>
+  <main>
 
+    <!-- ── HERO ── -->
+    <section id="hero" aria-labelledby="hero-title">
+      <div class="hero-bg-pattern" aria-hidden="true"></div>
+      <div class="hero-grid-overlay" aria-hidden="true"></div>
+      <div class="container">
+        <div class="hero-inner">
+          <div class="hero-content">
+            <div class="hero-badge" aria-label="Novidade">
+              <div class="hero-badge-dot" aria-hidden="true"></div>
+              <span>Tecnologia Solar + Gestão por App</span>
+            </div>
+            <h1 class="hero-title" id="hero-title">
+              Economize até<br/>
+              <span class="accent">95% na conta</span><br/>
+              de luz agora
+            </h1>
+            <p class="hero-sub">
+              Painéis solares inteligentes com monitoramento em tempo real pelo app. Saiba exatamente quanto você está gerando — e economizando — a qualquer hora.
+            </p>
+            <div class="hero-actions">
+              <a href="#orcamento" class="btn-primary">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 1l1.5 3 3.3.5-2.4 2.3.6 3.2L8 8.5 5 10l.6-3.2L3.2 4.5 6.5 4z"/></svg>
+                Orçamento grátis
+              </a>
+              <a href="#como-funciona" class="btn-outline">Como funciona</a>
+            </div>
+            <div class="hero-trust" aria-label="Clientes satisfeitos">
+              <div class="hero-avatars" aria-hidden="true">
+                <span>MR</span><span>AC</span><span>JB</span><span>+</span>
+              </div>
+              <p class="hero-trust-text">
+                <strong>+500 famílias e empresas</strong><br/>
+                já economizam com a Lumina
+              </p>
+            </div>
 
-                    <section class="hero-left">
-                        <h1>Economize até 95% na sua conta de luz</h1>
-                        <p class="lead">Sua conta de R$600 pode virar R$40. Veja quanto você economiza agora — sem compromisso.</p>
+            <figure class="bill-comparison" aria-hidden="false">
+              <img src="./media/image.png" alt="Comparação de conta: antes e depois" />
+              <figcaption>Conta antes — agora com Lumina</figcaption>
+            </figure>
+          </div>
 
-                        <div class="savings-box">
-                            <div class="savings-input">
-                                <label>Quanto você paga hoje?</label>
-                                <div class="input-row"><input id="billInput" type="number" placeholder="R$ 600" /> <button id="calcBtn">Calcular</button></div>
-                                <div class="savings-result" id="savingsResult">Exemplo: conta de R$600 → <strong>R$40/mês</strong></div>
-                            </div>
-                            <div class="savings-cta">
-                                <a class="btn-primary large" href="#contato">Quero meu cálculo grátis</a>
-                                <p class="privacy-note">Só precisamos de nome e telefone. Seus dados ficam seguros.</p>
-                            </div>
-                        </div>
-
-                        <div class="stats">
-                            <div class="stat">
-                                <div class="stat-value">500+</div>
-                                <div class="stat-label">Projetos instalados</div>
-                            </div>
-                            <div class="stat">
-                                <div class="stat-value">R$ 2 mi</div>
-                                <div class="stat-label">Economizados pelos clientes</div>
-                            </div>
-                            <div class="stat">
-                                <div class="stat-value">98%</div>
-                                <div class="stat-label">Satisfação</div>
-                            </div>
-                        </div>
-                    </section>
-            </section>
-
-            <aside class="hero-right">
-                <div class="card">
-                    <div class="card-media">
-                        <div class="chip">Curso</div>
-                    </div>
-                    <div class="card-body">
-                        <h3>Fundamentos Web-UX</h3>
-                        <p class="muted">Projeto feito para Trabalho N2</p>
-                        <div class="card-meta">
-                            <div class="meta-left">
-                                <div class="rating">4.9 • 2.3k avaliações</div>
-                            </div>
-                            <button class="btn-primary">Inscrever-se</button>
-                        </div>
-                    </div>
+          <div class="hero-visual" aria-hidden="true">
+            <div class="hero-card">
+              <div class="hero-card-header">
+                <span class="hero-card-title">Painel de Monitoramento</span>
+                <span class="hero-card-live">Ao vivo</span>
+              </div>
+              <div class="hero-stat-big">R$847</div>
+              <div class="hero-stat-label">economia este mês · Residência São Paulo</div>
+              <div class="hero-bar-group">
+                <div class="hero-bar-label"><span>Energia gerada</span><span>4,2 kWh</span></div>
+                <div class="hero-bar-track"><div class="hero-bar-fill" style="width:84%"></div></div>
+              </div>
+              <div class="hero-bar-group">
+                <div class="hero-bar-label"><span>Consumo</span><span>1,8 kWh</span></div>
+                <div class="hero-bar-track"><div class="hero-bar-fill" style="width:36%; animation-delay:0.3s"></div></div>
+              </div>
+              <div class="hero-bar-group">
+                <div class="hero-bar-label"><span>Excedente exportado</span><span>2,4 kWh</span></div>
+                <div class="hero-bar-track"><div class="hero-bar-fill" style="width:57%; animation-delay:0.6s"></div></div>
+              </div>
+              <div class="hero-card-divider"></div>
+              <div class="hero-mini-stats">
+                <div class="hero-mini-stat">
+                  <div class="hero-mini-stat-val">92%</div>
+                  <div class="hero-mini-stat-lbl">Redução na conta</div>
                 </div>
-            </aside>
+                <div class="hero-mini-stat">
+                  <div class="hero-mini-stat-val">7 anos</div>
+                  <div class="hero-mini-stat-lbl">Retorno investim.</div>
+                </div>
+                <div class="hero-mini-stat">
+                  <div class="hero-mini-stat-val">25 anos</div>
+                  <div class="hero-mini-stat-lbl">Garantia painel</div>
+                </div>
+                <div class="hero-mini-stat">
+                  <div class="hero-mini-stat-val">+CO₂</div>
+                  <div class="hero-mini-stat-lbl">2,1 ton evitadas</div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-    </main>
-        <section class="features container" id="beneficios">
-            <h2 class="section-title">Por que escolher nossa plataforma</h2>
-            <div class="features-grid">
-                <article class="feature">
-                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&s=8f9c0b3a8b7f6ab3b2f0c3c6b1f6f7e7" alt="Aulas" />
-                    <h3>Aulas práticas</h3>
-                    <p>Conteúdo aplicado e exercícios reais para fixar conhecimento.</p>
-                </article>
-                <article class="feature">
-                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&s=2b1a0d0ad5f5b4e9b7c6a1b9c3d2e4f5" alt="Mentoria" />
-                    <h3>Mentoria dedicada</h3>
-                    <p>Mentores experientes orientam em projetos e carreira.</p>
-                </article>
-                <article class="feature">
-                    <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&s=5f2d3c8a6b4f1e9d2c3b4a5f6d7e8c9b" alt="Comunidade" />
-                    <h3>Comunidade ativa</h3>
-                    <p>Rede de estudantes e profissionais para trocar experiências.</p>
-                </article>
-            </div>
-        </section>
-
-        <section class="about container" id="sobre">
-            <div class="about-grid">
-                <div class="about-media">
-                    <img src="https://images.unsplash.com/photo-1496307042754-b4aa456c4a2d?q=80&w=900&auto=format&fit=crop&ixlib=rb-4.0.3&s=0a1b2c3d4e5f67890123456789abcdef" alt="Sobre nós" />
-                    <section class="faq container" id="duvidas">
-                        <h2 class="section-title">Dúvidas frequentes</h2>
-                        <div class="faq-grid">
-                            <div class="faq-item">
-                                <h3>Quanto tempo até pagar o investimento?</h3>
-                                <p>Em geral entre 3 e 6 anos, dependendo do seu consumo. Muitos clientes recuperam o investimento com a economia mensal.</p>
-                            </div>
-                            <div class="faq-item">
-                                <h3>E se o dia estiver nublado?</h3>
-                                <p>Sistemas atuais geram energia mesmo em dias nublados e são dimensionados para a média anual de produção — você continua economizando.</p>
-                            </div>
-                            <div class="faq-item">
-                                <h3>Quem garante que vai funcionar?</h3>
-                                <p>Fornecemos garantia dos equipamentos e suporte técnico local. Também entregamos monitoramento em tempo real pelo app.</p>
-                            </div>
-                        </div>
-                    </section>
-                </div>
-                <div class="about-body">
-                    <h2>Somos educadores práticos</h2>
-                        <div class="testimonials-grid">
-                            <blockquote class="testimonial">
-                                <p>"Minha conta caiu de R$4.200 para R$380 em 8 meses — recuperamos o investimento em 4 anos."</p>
-                                <footer>
-                                    <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=200&auto=format&fit=crop&ixlib=rb-4.0.3&s=abcd1234abcd1234abcd1234abcd1234" alt="Cliente Ana"/>
-                                    <cite>Ana — Padaria, Florianópolis/SC</cite>
-                                </footer>
-                            </blockquote>
-                            <blockquote class="testimonial">
-                                <p>"Conta de R$1.200 caiu para R$95 em 6 meses. Atendimento e instalação impecáveis."</p>
-                                <footer>
-                                    <img src="https://images.unsplash.com/photo-1545996124-1b2f5d6a1a2b?q=80&w=200&auto=format&fit=crop&ixlib=rb-4.0.3&s=efgh5678efgh5678efgh5678efgh5678" alt="Cliente Rafael"/>
-                                    <cite>Rafael — Oficina Mecânica, Joinville/SC</cite>
-                                </footer>
-                            </blockquote>
-                        </div>
-                </div>
-                <div class="result-card">
-                    <div class="big">4.8</div>
-                    <p>média de avaliação dos cursos</p>
-                </div>
-                <div class="result-card">
-                    <div class="big">120+</div>
-                    <p>empresas parceiras recrutando</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="testimonials container" id="depoimentos">
-            <h2 class="section-title">O que nossos alunos dizem</h2>
-            <div class="testimonials-grid">
-                <blockquote class="testimonial">
-                    <p>"O curso mudou minha carreira — consegui uma vaga como UX Designer em 3 meses."</p>
-                    <footer>
-                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=200&auto=format&fit=crop&ixlib=rb-4.0.3&s=abcd1234abcd1234abcd1234abcd1234" alt="Aluno"/>
-                        <cite>Mariana, UX Designer</cite>
-                    </footer>
-                </blockquote>
-                <blockquote class="testimonial">
-                    <p>"Mentoria prática e feedback direto — meu portfólio ficou excelente."</p>
-                    <footer>
-                        <img src="https://images.unsplash.com/photo-1545996124-1b2f5d6a1a2b?q=80&w=200&auto=format&fit=crop&ixlib=rb-4.0.3&s=efgh5678efgh5678efgh5678efgh5678" alt="Aluno"/>
-                        <cite>Rafael, Front-end</cite>
-                    </footer>
-                </blockquote>
-            </div>
-        </section>
-
-        <section class="partners container" id="parceiros">
-            <h2 class="section-title">Parceiros</h2>
-            <div class="partners-grid">
-                <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=300&auto=format&fit=crop&ixlib=rb-4.0.3&s=11111111111111111111111111111111" alt="Parceiro 1"/>
-                <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=300&auto=format&fit=crop&ixlib=rb-4.0.3&s=22222222222222222222222222222222" alt="Parceiro 2"/>
-                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=300&auto=format&fit=crop&ixlib=rb-4.0.3&s=33333333333333333333333333333333" alt="Parceiro 3"/>
-            </div>
-        </section>
-
-        <section class="contact container" id="contato">
-    <section class="contact container" id="contato">
-        <h2 class="section-title">Calcule sua economia grátis</h2>
-        <div class="contact-grid">
-            <form id="contactForm" class="contact-form" action="#" onsubmit="handleContact(event)">
-                <label>Nome
-                    <input type="text" name="name" required />
-                </label>
-                <label>Telefone
-                    <input type="tel" name="phone" required placeholder="(47) 99999-9999" />
-                </label>
-                <label>Tipo de imóvel
-                    <div class="radio-row"><label><input type="radio" name="type" value="residencial" checked /> Residencial</label><label><input type="radio" name="type" value="comercial" /> Comercial</label></div>
-                </label>
-                <button type="submit" class="btn-primary">Quero meu cálculo grátis</button>
-                <p class="privacy-note">Só pedimos nome e telefone — seus dados ficam seguros e não serão vendidos.</p>
-            </form>
-            <div class="contact-info">
-                <p>Ou envie um email para <a href="mailto:contato@lumina.com.br">contato@lumina.com.br</a></p>
-                <p>Atendimento: (47) 3300-1234 • Joinville/SC</p>
-            </div>
-        </div>
+      </div>
     </section>
 
-        <footer class="site-footer">
-            <div class="container">© 2026 EDUO — Todos os direitos reservados.</div>
-        </footer>
+    <!-- ── STATS ── -->
+    <section id="stats" aria-label="Números da Lumina Tech Solar">
+      <div class="container">
+        <div class="stats-grid">
+          <article class="stat-item">
+            <div class="stat-number">500+</div>
+            <div class="stat-label">Projetos instalados</div>
+          </article>
+          <article class="stat-item">
+            <div class="stat-number">R$4,2M</div>
+            <div class="stat-label">Economizados pelos clientes</div>
+          </article>
+          <article class="stat-item">
+            <div class="stat-number">98%</div>
+            <div class="stat-label">Satisfação dos clientes</div>
+          </article>
+          <article class="stat-item">
+            <div class="stat-number">25 anos</div>
+            <div class="stat-label">Garantia dos painéis</div>
+          </article>
+        </div>
+      </div>
+    </section>
 
-        <script>
-            function handleContact(e){
-                e.preventDefault();
-                const form = e.target;
-                const data = new FormData(form);
-                alert('Obrigado, ' + data.get('name') + '! Mensagem enviada.');
-                form.reset();
-            }
-        </script>
+    <!-- ── BENEFÍCIOS ── -->
+    <section id="beneficios" aria-labelledby="beneficios-title">
+      <div class="container">
+        <div class="section-header">
+          <div class="tag">Por que a Lumina?</div>
+          <h2 class="section-title" id="beneficios-title">Tecnologia que outros<br/>fornecedores não têm</h2>
+          <p class="section-sub">Nosso sistema vai além do painel: inteligência artificial e conectividade para maximizar sua economia.</p>
+        </div>
+        <div class="benefits-grid">
+          <article class="benefit-card">
+            <div class="benefit-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 2L3 7l9 5 9-5-9-5zM3 17l9 5 9-5M3 12l9 5 9-5"/></svg>
+            </div>
+            <h3 class="benefit-title">Monitoramento em tempo real</h3>
+            <p class="benefit-desc">Acompanhe geração, consumo e excedente exportado diretamente pelo app. Dados atualizados a cada 5 minutos, com alertas inteligentes.</p>
+          </article>
+          <article class="benefit-card">
+            <div class="benefit-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+            </div>
+            <h3 class="benefit-title">Painéis de alta eficiência</h3>
+            <p class="benefit-desc">Tecnologia monocristalina de última geração com eficiência de até 22,8%. Mais energia por m² de telhado instalado.</p>
+          </article>
+          <article class="benefit-card">
+            <div class="benefit-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h3 class="benefit-title">Garantia total de 25 anos</h3>
+            <p class="benefit-desc">Cobertura completa em painéis, inversores e estrutura de fixação. Suporte técnico especializado incluso durante toda a garantia.</p>
+          </article>
+          <article class="benefit-card">
+            <div class="benefit-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 0 20A10 10 0 0 0 12 2zm1 14.93V17a1 1 0 0 1-2 0v-.07A8 8 0 0 1 4.07 9H5a1 1 0 0 1 0 2A6 6 0 0 0 13 16.93zM11 7V5a1 1 0 0 1 2 0v2a1 1 0 0 1-2 0zm5.66 2.34a1 1 0 0 1-1.42-1.42l.71-.71a1 1 0 1 1 1.42 1.42l-.71.71z"/></svg>
+            </div>
+            <h3 class="benefit-title">Instalação em 3 dias úteis</h3>
+            <p class="benefit-desc">Equipe técnica certificada, projeto elétrico e homologação junto à distribuidora. Tudo incluso sem custo adicional.</p>
+          </article>
+          <article class="benefit-card">
+            <div class="benefit-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            </div>
+            <h3 class="benefit-title">Financiamento facilitado</h3>
+            <p class="benefit-desc">Parceria com BV Financeira e Santander Solar. Parcelas que cabem no bolso — menores que a economia gerada desde o primeiro mês.</p>
+          </article>
+          <article class="benefit-card">
+            <div class="benefit-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <h3 class="benefit-title">Atendimento dedicado</h3>
+            <p class="benefit-desc">Consultor exclusivo do orçamento à pós-venda. Suporte via app, WhatsApp e telefone com tempo de resposta de até 2 horas.</p>
+          </article>
+        </div>
+      </div>
+    </section>
 
-    </body>
-    </html>
+    <!-- ── COMO FUNCIONA ── -->
+    <section id="como-funciona" aria-labelledby="como-funciona-title">
+      <div class="container">
+        <div class="section-header">
+          <div class="tag">O processo</div>
+          <h2 class="section-title" id="como-funciona-title">Do orçamento à economia<br/>em 3 passos simples</h2>
+          <p class="section-sub" style="color: rgba(255,255,255,0.55); margin: 16px auto 0;">Cuidamos de toda a burocracia. Você só precisa aproveitar a economia.</p>
+        </div>
+        <div class="steps-grid">
+          <article class="step">
+            <div class="step-number" aria-hidden="true">1</div>
+            <h3 class="step-title">Solicite o orçamento</h3>
+            <p class="step-desc">Preencha o formulário em 2 minutos. Nossa equipe analisa seu consumo e entra em contato em até 24 horas com um projeto personalizado.</p>
+          </article>
+          <article class="step">
+            <div class="step-number" aria-hidden="true">2</div>
+            <h3 class="step-title">Aprovação e instalação</h3>
+            <p class="step-desc">Aprovado o projeto, nossa equipe técnica agenda a instalação. Em 3 dias úteis seu sistema já está funcionando e homologado.</p>
+          </article>
+          <article class="step">
+            <div class="step-number" aria-hidden="true">3</div>
+            <h3 class="step-title">Monitore e economize</h3>
+            <p class="step-desc">Acesse o app Lumina e acompanhe em tempo real tudo que seu sistema gera. Veja sua economia crescer mês a mês.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── PROVA SOCIAL ── -->
+    <section id="prova-social" aria-labelledby="prova-social-title">
+      <div class="container">
+        <div class="section-header">
+          <div class="tag">Depoimentos</div>
+          <h2 class="section-title" id="prova-social-title">Quem já economiza<br/>com a Lumina</h2>
+          <p class="section-sub">Resultados reais de clientes residenciais e comerciais em todo o Brasil.</p>
+        </div>
+
+        <div class="partners-bar" aria-label="Parceiros e certificações">
+          <div class="partner-item"><span class="partner-logo">ABSOLAR</span></div>
+          <div class="partner-item"><span class="partner-logo">ANEEL</span></div>
+          <div class="partner-item"><span class="partner-logo">BV Financeira</span></div>
+          <div class="partner-item"><span class="partner-logo">Santander Solar</span></div>
+          <div class="partner-item"><span class="partner-logo">ISO 9001</span></div>
+          <div class="partner-item"><span class="partner-logo">INMETRO</span></div>
+        </div>
+
+        <div class="testimonials-grid">
+          <article class="testimonial-card">
+            <div class="testimonial-stars" aria-label="5 estrelas">
+              <svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+            <p class="testimonial-text">Minha conta era R$780 por mês. Hoje pago R$58 de taxa mínima. O app da Lumina é incrível — consigo ver a geração em tempo real e até recebo alertas quando está rendendo menos por nuvens.</p>
+            <div class="testimonial-author">
+              <div class="author-avatar" aria-hidden="true">MR</div>
+              <div>
+                <div class="author-name">Marcos Rodrigues</div>
+                <div class="author-info">Residencial · Joinville, SC</div>
+              </div>
+              <div class="author-saving">-92% na conta</div>
+            </div>
+          </article>
+
+          <article class="testimonial-card">
+            <div class="testimonial-stars" aria-label="5 estrelas">
+              <svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+            <p class="testimonial-text">Nossa padaria tinha uma conta de R$4.200/mês. Com o sistema comercial da Lumina, caiu para R$380. Em menos de 6 anos o investimento já se paga. A instalação foi super rápida e sem transtorno.</p>
+            <div class="testimonial-author">
+              <div class="author-avatar" aria-hidden="true">AC</div>
+              <div>
+                <div class="author-name">Ana Cristina Martins</div>
+                <div class="author-info">Comercial · Florianópolis, SC</div>
+              </div>
+              <div class="author-saving">-91% na conta</div>
+            </div>
+          </article>
+
+          <article class="testimonial-card">
+            <div class="testimonial-stars" aria-label="5 estrelas">
+              <svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+            <p class="testimonial-text">Fiquei com medo de ser golpe como já tinha visto em outros lugares. A Lumina me passou toda a documentação, laudos e certificações antes mesmo de fechar. Profissionalismo do início ao fim.</p>
+            <div class="testimonial-author">
+              <div class="author-avatar" aria-hidden="true">JB</div>
+              <div>
+                <div class="author-name">José Benedito Lima</div>
+                <div class="author-info">Residencial · Blumenau, SC</div>
+              </div>
+              <div class="author-saving">-88% na conta</div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── FORMULÁRIO ── -->
+    <section id="orcamento" aria-labelledby="form-title">
+      <div class="container">
+        <div class="form-wrapper">
+          <div class="form-left">
+            <div class="tag">Orçamento gratuito</div>
+            <h2 class="section-title" id="form-title">Descubra quanto você<br/>pode economizar</h2>
+            <p class="section-sub">Nossa equipe analisa seu consumo e monta um projeto personalizado sem custo. Resposta em até 24 horas.</p>
+            <div class="form-perks">
+              <div class="form-perk">
+                <div class="perk-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>
+                </div>
+                Orçamento 100% gratuito e sem compromisso
+              </div>
+              <div class="form-perk">
+                <div class="perk-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>
+                </div>
+                Projeto elétrico e homologação inclusos
+              </div>
+              <div class="form-perk">
+                <div class="perk-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>
+                </div>
+                Financiamento em até 84 meses
+              </div>
+              <div class="form-perk">
+                <div class="perk-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>
+                </div>
+                Instalação em 3 dias úteis após aprovação
+              </div>
+            </div>
+          </div>
+
+          <div class="form-right">
+            <form action="#" method="post" novalidate>
+              <h3 class="form-title">Solicite seu orçamento</h3>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="nome">Nome completo</label>
+                  <input type="text" id="nome" name="nome" placeholder="Seu nome" required autocomplete="name" />
+                </div>
+                <div class="form-group">
+                  <label for="email">E-mail</label>
+                  <input type="email" id="email" name="email" placeholder="seu@email.com" required autocomplete="email" />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="telefone">WhatsApp / Telefone</label>
+                  <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" required autocomplete="tel" />
+                </div>
+                <div class="form-group">
+                  <label for="cidade">Cidade</label>
+                  <input type="text" id="cidade" name="cidade" placeholder="Sua cidade" required autocomplete="address-level2" />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="tipo">Tipo de imóvel</label>
+                <select id="tipo" name="tipo" required>
+                  <option value="" disabled selected>Selecione o tipo</option>
+                  <option value="residencial">Residencial</option>
+                  <option value="comercial">Comercial</option>
+                  <option value="industrial">Industrial</option>
+                  <option value="rural">Rural / Agro</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="mensagem">Valor médio da sua conta de luz (opcional)</label>
+                <textarea id="mensagem" name="mensagem" placeholder="Ex: Minha conta é em torno de R$ 400/mês. Tenho interesse em financiamento..."></textarea>
+              </div>
+              <button type="submit" class="btn-primary form-submit">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 2L11 13M22 2L15 22 11 13 2 9l20-7z"/></svg>
+                Quero meu orçamento grátis
+              </button>
+              <p class="form-disclaimer">🔒 Seus dados estão seguros. Não enviamos spam.</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── FOOTER ── -->
+  <footer>
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="logo-text">LUMINA <span>TECH</span> SOLAR</span>
+          <p>Painéis solares inteligentes e sistemas de gestão de energia por app. Inovação e sustentabilidade para residências e empresas.</p>
+        </div>
+        <div>
+          <div class="footer-col-title">Navegação</div>
+          <ul class="footer-links">
+            <li><a href="#beneficios">Benefícios</a></li>
+            <li><a href="#como-funciona">Como funciona</a></li>
+            <li><a href="#prova-social">Depoimentos</a></li>
+            <li><a href="#orcamento">Orçamento</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-col-title">Soluções</div>
+          <ul class="footer-links">
+            <li><a href="#orcamento">Residencial</a></li>
+            <li><a href="#orcamento">Comercial</a></li>
+            <li><a href="#orcamento">Industrial</a></li>
+            <li><a href="#orcamento">Rural / Agro</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-col-title">Contato</div>
+          <ul class="footer-links">
+            <li><a href="mailto:contato@luminatechsolar.com.br">contato@luminatechsolar.com.br</a></li>
+            <li><a href="tel:+554733000000">(47) 3300-0000</a></li>
+            <li><a href="#orcamento">WhatsApp</a></li>
+            <li>Joinville, SC</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2024 Lumina Tech Solar. Todos os direitos reservados. CNPJ 00.000.000/0001-00</p>
+        <p>Projeto acadêmico · Católica de Santa Catarina · UX/Front-end</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
