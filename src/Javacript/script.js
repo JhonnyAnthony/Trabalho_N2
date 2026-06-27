@@ -58,7 +58,7 @@ function initCalculator() {
           <strong>R$ ${valor.toFixed(2).replace('.', ',')}</strong>
         </div>
         <div class="economia-item">
-          <span>Nova Conta (5% taxa mín):</span>
+          <span>Nova Conta:</span>
           <strong>R$ ${nuevaContaMes.toFixed(2).replace('.', ',')}</strong>
         </div>
         <div class="economia-item economia-destaque">
