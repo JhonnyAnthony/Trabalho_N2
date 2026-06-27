@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Lumina Tech Solar</title>
   <link rel="stylesheet" href="style/style.css"/>
+  <link rel="stylesheet" href="style/darkmode.css"/>
+  <link rel="stylesheet" href="style/calculadora.css"/>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
@@ -24,13 +26,14 @@
           <li><a href="#beneficios">Benefícios</a></li>
           <li><a href="#sobre">Sobre</a></li>
           <li><a href="#depoimentos">Depoimentos</a></li>
+          <li><a href="#calculadora">Calculadora</a></li>
           <li><a href="#orcamento">Orçamento</a></li>
         </ul>
       </nav>
 
       <a href="#orcamento" class="btn-nav">Solicitar orçamento</a>
 
-      <button id="darkmode">Modo Escuro</button>
+      <button id="darkmode">🌙 Modo Escuro</button>
 
     </div>
   </header>
@@ -223,6 +226,83 @@
     </div>
   </section>
 
+  <!-- CALCULADORA DE ROI (US01) -->
+  <section class="calculator-section" id="calculadora">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">CALCULADORA DE ECONOMIA</h2>
+        <p class="section-subtitle">Simule quanto você pode economizar com energia solar Lumina</p>
+      </div>
+      
+      <div class="calculator-grid">
+        <!-- Input -->
+        <div class="calculator-input">
+          <div class="input-card">
+            <label for="input-conta-atual">
+              💡 Sua conta de energia atual (R$)
+            </label>
+            <input 
+              type="number" 
+              id="input-conta-atual" 
+              placeholder="Ex: 500"
+              min="0"
+              step="10"
+            >
+            <p class="input-hint">Digite o valor mensal da sua conta</p>
+            
+            <!-- Slider -->
+            <div class="slider-container">
+              <label>ou ajuste com o slider:</label>
+              <input 
+                type="range" 
+                id="slider-economia" 
+                min="0" 
+                max="100" 
+                value="0"
+                class="slider"
+              >
+              <div class="slider-labels">
+                <span>R$ 0</span>
+                <span>R$ 5.000+</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Output -->
+        <div class="calculator-output">
+          <div class="output-card">
+            <h3>Sua economia com Lumina:</h3>
+            <div id="output-economia" class="economia-placeholder">
+              <p>Digite um valor para ver sua economia</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Benefícios -->
+      <div class="calculator-benefits">
+        <div class="benefit-item">
+          <span class="benefit-icon">✅</span>
+          <p><strong>Economia de até 95%</strong> na conta de energia</p>
+        </div>
+        <div class="benefit-item">
+          <span class="benefit-icon">📱</span>
+          <p><strong>Monitoramento em tempo real</strong> via app</p>
+        </div>
+        <div class="benefit-item">
+          <span class="benefit-icon">🔒</span>
+          <p><strong>Sem risco</strong> - Orçamento gratuito</p>
+        </div>
+        <div class="benefit-item">
+          <span class="benefit-icon">⚡</span>
+          <p><strong>Retorno em 6 anos</strong> em média</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FORMULÁRIO DE ORÇAMENTO -->
   <section class="form-section" id="orcamento">
     <div class="container form-grid">
 
