@@ -243,3 +243,34 @@ document.addEventListener('DOMContentLoaded', () => {
   initMobileMenu();
 });
 
+// ===== ACORDEÃO DINÂMICO (US04 VISITANTE) =====
+function initAccordion() {
+  // Captura todos os botões disparadores do componente
+  const accordionButtons = document.querySelectorAll('.accordion-btn');
+  
+  accordionButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      // Captura o contêiner ancestral direto do botão clicado
+      const accordionItem = btn.closest('.accordion-item');
+      const content = accordionItem.querySelector('.accordion-content');
+      
+      // REGRA DE UX: Localiza outros itens que estejam abertos e fecha-os antes de abrir o atual
+      document.querySelectorAll('.accordion-item.active').forEach(item => {
+        if (item !== accordionItem) {
+          item.classList.remove('active');
+          item.querySelector('.accordion-content').style.maxHeight = null;
+        }
+      });
+
+      // Alterna a classe de ativação visual no elemento pai (.accordion-item)
+      accordionItem.classList.toggle('active');
+      
+      // Controla a animação de abertura baseada no tamanho dinâmico do conteúdo textual interno
+      if (accordionItem.classList.contains('active')) {
+        content.style.maxHeight = content.scrollHeight + 'px';
+      } else {
+        content.style.maxHeight = null;
+      }
+    });
+  });
+}
