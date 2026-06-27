@@ -12,7 +12,7 @@ function updateDarkModeButton() {
   if (htmlElement.classList.contains('dark-mode')) {
     darkModeBtn.textContent = 'Modo Claro';
   } else {
-    darkModeBtn.textContent = 'Modo Sustentável';
+    darkModeBtn.textContent = 'Modo Escuro';
   }
 }
 
@@ -207,10 +207,39 @@ function initAccordion() {
   });
 }
 
+function initMobileMenu() {
+  const menuToggle = document.getElementById('menu-toggle');
+  const menu = document.querySelector('.menu');
+
+  if (!menuToggle || !menu) return;
+
+  menuToggle.addEventListener('click', () => {
+    const isOpen = menu.classList.toggle('open');
+    menuToggle.setAttribute('aria-expanded', String(isOpen));
+
+    if (isOpen) {
+      menuToggle.setAttribute('aria-label', 'Fechar menu');
+    } else {
+      menuToggle.setAttribute('aria-label', 'Abrir menu');
+    }
+  });
+
+  document.querySelectorAll('.menu a').forEach((link) => {
+    link.addEventListener('click', () => {
+      if (menu.classList.contains('open')) {
+        menu.classList.remove('open');
+        menuToggle.setAttribute('aria-expanded', 'false');
+        menuToggle.setAttribute('aria-label', 'Abrir menu');
+      }
+    });
+  });
+}
+
 // ===== INICIALIZAR TUDO =====
 document.addEventListener('DOMContentLoaded', () => {
   initCalculator();
   initFormValidation();
   initAccordion();
+  initMobileMenu();
 });
 
