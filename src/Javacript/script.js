@@ -5,7 +5,15 @@ const htmlElement = document.documentElement;
 // Verificar preferência salva
 if (localStorage.getItem('darkMode') === 'enabled') {
   htmlElement.classList.add('dark-mode');
-  darkModeBtn.textContent = '☀️ Modo Claro';
+  updateDarkModeButton();
+}
+
+function updateDarkModeButton() {
+  if (htmlElement.classList.contains('dark-mode')) {
+    darkModeBtn.textContent = 'Modo Claro';
+  } else {
+    darkModeBtn.textContent = 'Modo Sustentável';
+  }
 }
 
 darkModeBtn.addEventListener('click', () => {
@@ -13,11 +21,12 @@ darkModeBtn.addEventListener('click', () => {
   
   if (htmlElement.classList.contains('dark-mode')) {
     localStorage.setItem('darkMode', 'enabled');
-    darkModeBtn.textContent = '☀️ Modo Claro';
+
   } else {
     localStorage.setItem('darkMode', 'disabled');
-    darkModeBtn.textContent = '🌙 Modo Escuro';
+    
   }
+  updateDarkModeButton();
 });
 
 // ===== CALCULADORA DE ROI (US01) =====
@@ -204,3 +213,4 @@ document.addEventListener('DOMContentLoaded', () => {
   initFormValidation();
   initAccordion();
 });
+
