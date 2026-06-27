@@ -1,17 +1,29 @@
 :root {
-  --primary: #0a4b8b  ;
+  --primary: #0a4b8b;
   --dark: #081223;
   --light: #F4F7FA;
   --text: #5B6470;
   --white: #FFFFFF;
+
   --gray-light: #E5E7EB;
   --gray-mid: #9CA3AF;
   --gray-text: #4B5563;
+  --gray-dark: #6B7280;
+
   --off-white: #F9FAFB;
+
   --sun: #F59E0B;
-  --blue-mid: #F59E0B;
-  --blue-accent: #F59E0B;
+
   --blue-deep: #111827;
+
+  --border: #D1D5DB;
+
+  --step-bg: #E7EFFF;
+
+  --footer-bg: #07111F;
+  --footer-text: rgba(255,255,255,0.55);
+  --footer-text-soft: rgba(255,255,255,0.35);
+
   --shadow: 0 10px 30px rgba(0,0,0,0.1);
   --transition: 0.25s ease;
   --radius-lg: 16px;
@@ -20,7 +32,38 @@
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
 html { scroll-behavior: smooth; }
-body { font-family: 'Inter', sans-serif; color: #111827; background: white; }
+body {
+  font-family: 'Inter', sans-serif;
+  color: var(--blue-deep);
+  background: var(--white);
+}
+
+body.dark {
+  --primary: #4ea8ff;
+  --dark: #f4f7fa;
+  --light: #0f172a;
+  --text: #cbd5e1;
+  --white: #0b1220;
+
+  --gray-light: #334155;
+  --gray-mid: #94a3b8;
+  --gray-text: #cbd5e1;
+  --gray-dark: #94a3b8;
+
+  --off-white: #111827;
+
+  --sun: #fbbf24;
+
+  --blue-deep: #e5e7eb;
+
+  --border: #334155;
+
+  --step-bg: #1e293b;
+
+  --footer-bg: #020617;
+  --footer-text: rgba(255,255,255,0.7);
+  --footer-text-soft: rgba(255,255,255,0.4);
+}
 
 .container {
   width: 90%;
@@ -59,6 +102,12 @@ body { font-family: 'Inter', sans-serif; color: #111827; background: white; }
   justify-content: space-between;
   position: relative;
   height: 72px;
+}
+
+.nav-buttons{
+  display: flex;
+  gap: 20px;
+  align-items: center;
 }
 
 /* Logo esquerda */
@@ -100,7 +149,7 @@ nav {
 
 .menu a {
   text-decoration: none;
-  color: white;
+  color: var(--white);
   font-weight: 500;
   font-size: 0.95rem;
   transition: color .25s;
@@ -167,7 +216,7 @@ nav {
 .hero h1 span { color: #378ADD; }
 
 .hero p {
-  color: #D1D5DB;
+  color:  var(--gray-light);
   font-size: 1.1rem;
   max-width: 650px;
   line-height: 1.7;

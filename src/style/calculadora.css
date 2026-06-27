@@ -1,0 +1,375 @@
+/* ===== CALCULADORA DE ROI ===== */
+
+.calculator-section {
+  padding: 100px 0;
+  background: white;
+}
+
+.calculator-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-top: 50px;
+  align-items: stretch;
+}
+
+/* INPUT CARD */
+.input-card {
+  background: linear-gradient(135deg, #f0f7ff 0%, #f5f9ff 100%);
+  border: 3px solid #378ADD;
+  border-radius: 20px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-shadow: 0 4px 15px rgba(55, 138, 221, 0.15);
+}
+
+.input-card label {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #111827;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+#input-conta-atual {
+  font-size: 1.8rem;
+  padding: 16px 20px;
+  border: 2.5px solid #378ADD;
+  border-radius: 12px;
+  font-weight: 600;
+  color: var(--primary);
+  background: white;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(55, 138, 221, 0.1);
+}
+
+#input-conta-atual:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 4px rgba(55, 138, 221, 0.2);
+  outline: none;
+  background: #f0f7ff;
+}
+
+#input-conta-atual::placeholder {
+  color: #9ca3af;
+}
+
+.input-hint {
+  font-size: 0.85rem;
+  color: #6b7280;
+  margin: 0;
+}
+
+/* SLIDER */
+.slider-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.slider-container label {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #374151;
+  display: block;
+}
+
+.slider {
+  width: 100%;
+  height: 8px;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #e5e7eb 0%, var(--primary) 100%);
+  outline: none;
+  -webkit-appearance: none;
+  appearance: none;
+  cursor: pointer;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--primary);
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(10, 75, 139, 0.3);
+  transition: all 0.2s ease;
+}
+
+.slider::-webkit-slider-thumb:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(10, 75, 139, 0.4);
+}
+
+.slider::-moz-range-thumb {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--primary);
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 2px 8px rgba(10, 75, 139, 0.3);
+  transition: all 0.2s ease;
+}
+
+.slider::-moz-range-thumb:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(10, 75, 139, 0.4);
+}
+
+.slider-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  color: #9ca3af;
+  margin-top: 5px;
+}
+
+/* OUTPUT CARD */
+.output-card {
+  background: linear-gradient(135deg, var(--primary) 0%, #0a3d97 100%);
+  border-radius: 20px;
+  padding: 40px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0 20px 50px rgba(10, 75, 139, 0.2);
+}
+
+.output-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 24px;
+  font-weight: 600;
+  opacity: 0.95;
+}
+
+#output-economia {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.economia-placeholder {
+  font-size: 1rem;
+  opacity: 0.85;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.economia-placeholder p {
+  margin: 0;
+}
+
+.economia-resultado {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.economia-item {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 16px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.economia-item span {
+  font-size: 0.95rem;
+  opacity: 0.9;
+}
+
+.economia-item strong {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #fbbf24;
+}
+
+.economia-item.economia-destaque {
+  background: rgba(251, 191, 36, 0.15);
+  border-color: rgba(251, 191, 36, 0.3);
+  transform: scale(1.05);
+}
+
+.economia-item.economia-destaque strong {
+  color: #fbbf24;
+  font-size: 1.8rem;
+}
+
+/* BENEFÍCIOS DA CALCULADORA */
+.calculator-benefits {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin-top: 60px;
+}
+
+.benefit-item {
+  background: #f3f4f6;
+  padding: 28px 20px;
+  border-radius: 16px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  transition: all 0.3s ease;
+  border: 1px solid #e5e7eb;
+}
+
+.benefit-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  background: white;
+}
+
+.benefit-icon {
+  font-size: 2rem;
+  display: block;
+}
+
+.benefit-item p {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #374151;
+}
+
+.benefit-item strong {
+  color: var(--primary);
+  font-weight: 600;
+}
+
+/* DARK MODE - CALCULADORA */
+html.dark-mode .calculator-section {
+  background: var(--bg-secondary);
+}
+
+html.dark-mode .input-card {
+  background: rgba(55, 138, 221, 0.08);
+  border-color: rgba(55, 138, 221, 0.3);
+  box-shadow: 0 4px 15px rgba(55, 138, 221, 0.2);
+}
+
+html.dark-mode .input-card label {
+  color: var(--text);
+}
+
+html.dark-mode #input-conta-atual {
+  background: var(--bg-primary);
+  border-color: rgba(55, 138, 221, 0.5);
+  color: #fbbf24;
+  box-shadow: 0 2px 8px rgba(55, 138, 221, 0.2);
+}
+
+html.dark-mode #input-conta-atual:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 4px rgba(55, 138, 221, 0.3);
+  background: rgba(55, 138, 221, 0.1);
+}
+
+html.dark-mode .input-hint {
+  color: var(--gray-text);
+}
+
+html.dark-mode .slider-container label {
+  color: var(--text);
+}
+
+html.dark-mode .slider-labels {
+  color: var(--gray-mid);
+}
+
+html.dark-mode .calculator-benefits {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+html.dark-mode .benefit-item {
+  background: var(--bg-primary);
+  border-color: var(--gray-light);
+  color: var(--text);
+}
+
+html.dark-mode .benefit-item:hover {
+  background: var(--bg-secondary);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+html.dark-mode .benefit-item p {
+  color: var(--gray-text);
+}
+
+/* RESPONSIVO */
+@media (max-width: 992px) {
+  .calculator-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .calculator-benefits {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .input-card,
+  .output-card {
+    padding: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .calculator-section {
+    padding: 60px 0;
+  }
+
+  .calculator-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .calculator-benefits {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .input-card,
+  .output-card {
+    padding: 24px;
+  }
+
+  .input-card label {
+    font-size: 1rem;
+  }
+
+  #input-conta-atual {
+    font-size: 1.5rem;
+  }
+
+  .economia-item strong {
+    font-size: 1.2rem;
+  }
+
+  .economia-item.economia-destaque strong {
+    font-size: 1.5rem;
+  }
+
+  .benefit-item {
+    padding: 20px 16px;
+  }
+
+  .benefit-icon {
+    font-size: 1.8rem;
+  }
+
+  .benefit-item p {
+    font-size: 0.85rem;
+  }
+}
