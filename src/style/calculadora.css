@@ -16,12 +16,13 @@
 /* INPUT CARD */
 .input-card {
   background: linear-gradient(135deg, #f0f7ff 0%, #f5f9ff 100%);
-  border: 2px solid #e0ebf7;
+  border: 3px solid #378ADD;
   border-radius: 20px;
   padding: 40px;
   display: flex;
   flex-direction: column;
   gap: 20px;
+  box-shadow: 0 4px 15px rgba(55, 138, 221, 0.15);
 }
 
 .input-card label {
@@ -36,22 +37,24 @@
 #input-conta-atual {
   font-size: 1.8rem;
   padding: 16px 20px;
-  border: 2px solid #d1d5db;
+  border: 2.5px solid #378ADD;
   border-radius: 12px;
   font-weight: 600;
   color: var(--primary);
   background: white;
   transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(55, 138, 221, 0.1);
 }
 
 #input-conta-atual:focus {
   border-color: var(--primary);
-  box-shadow: 0 0 0 4px rgba(10, 75, 139, 0.1);
+  box-shadow: 0 0 0 4px rgba(55, 138, 221, 0.2);
   outline: none;
+  background: #f0f7ff;
 }
 
 #input-conta-atual::placeholder {
-  color: #d1d5db;
+  color: #9ca3af;
 }
 
 .input-hint {
@@ -252,7 +255,8 @@ html.dark-mode .calculator-section {
 
 html.dark-mode .input-card {
   background: rgba(55, 138, 221, 0.08);
-  border-color: rgba(55, 138, 221, 0.2);
+  border-color: rgba(55, 138, 221, 0.3);
+  box-shadow: 0 4px 15px rgba(55, 138, 221, 0.2);
 }
 
 html.dark-mode .input-card label {
@@ -261,13 +265,15 @@ html.dark-mode .input-card label {
 
 html.dark-mode #input-conta-atual {
   background: var(--bg-primary);
-  border-color: rgba(55, 138, 221, 0.3);
+  border-color: rgba(55, 138, 221, 0.5);
   color: #fbbf24;
+  box-shadow: 0 2px 8px rgba(55, 138, 221, 0.2);
 }
 
 html.dark-mode #input-conta-atual:focus {
   border-color: var(--primary);
-  box-shadow: 0 0 0 4px rgba(55, 138, 221, 0.2);
+  box-shadow: 0 0 0 4px rgba(55, 138, 221, 0.3);
+  background: rgba(55, 138, 221, 0.1);
 }
 
 html.dark-mode .input-hint {
