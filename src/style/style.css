@@ -104,6 +104,12 @@ body.dark {
   height: 72px;
 }
 
+.nav-buttons{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
 /* Logo esquerda */
 .logo {
   display: flex;
